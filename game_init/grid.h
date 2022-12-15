@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 #ifndef GRID
 #define GRID
 
@@ -9,6 +12,6 @@ typedef struct Grid {
   Cell **fields;
 } Grid;
 
-Grid * createGrid(int width, int height);
+void createGrid(Grid * grid, Cell** fields, int width, int height);
 
 #endif // !Grid
